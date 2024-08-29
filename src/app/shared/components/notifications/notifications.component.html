@@ -1,0 +1,47 @@
+<div>
+    <input style="display:none;" id="dropdownInputNotifi" type="checkbox" />
+    <label for="dropdownInputNotifi" class="overlay"></label>
+
+<div class="container-dropdown">
+    <div class="dropdown" (click)="toggleBadgeVisibility()">
+        <label class="dropbtn" for="dropdownInputNotifi">
+            <span class="material-symbols-outlined">
+                notification_important
+            </span>
+            <mat-icon [matBadge]="notifications.length" [matBadgeHidden]="hidden">
+            </mat-icon>
+        </label>
+        <div class="dropdown-content">
+            <div [ngStyle]="{'opacity': notifi.readonly ? '0.5' : '1'}" class="items-list"
+                *ngFor="let notifi of  notifications; let idx = index" for="dropdownInputNotifi">
+                <div class="line" *ngIf="idx != 0">
+                    <div></div>
+                </div>
+                <div class="menu-item">
+                    <div class="notification">
+                        <span class="material-symbols-outlined">
+                            notification_important
+                        </span>
+                    </div>
+                    <div class="title-description">
+                        <label class="title" for="dropdownInputNotifi">{{notifi.title}}</label>
+                        <label class="description" for="dropdownInputNotifi">{{notifi.description}}</label>
+                    </div>
+                    <div class="date-show-all">
+                        <div class="date">
+                            {{notifi.date}}
+                        </div>
+                        <div class="show-all" (click)="onShowAll()">
+                            <span>Show</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="see-all">
+                <span>See All</span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

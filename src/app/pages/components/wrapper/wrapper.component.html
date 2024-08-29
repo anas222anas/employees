@@ -1,0 +1,39 @@
+<div class="container-layout">
+    <div class="sidnav">
+        <div class="logo">
+            <img src="logo.png" alt="">
+            <div class="text-logo">Logo</div>
+        </div>
+        <div class="sidnav-items">
+            <div *ngFor="let item of sidnavItems; let i = index" class="sidnav-item" (click)="acivated(i)" [routerLink]="item.routerLink">
+                <img [src]="item.urlImg" alt="">
+                <div class="sidnav-text"[class.isActive]="item.isActive">{{item.text}}</div>
+            </div>
+
+            <div class="need-help-in-bottom">
+                <div class="need-help">
+                    <div class="img-question">
+                        <img src="question-mark.png" alt="">
+                    </div>
+                    <div class="img-help">
+                        <div>
+                            <div class="need-help-text">Need Help?</div>
+                            <div class="need-help-desc">Click here to find Functionalities, Help, and More!</div>
+                            <div class="discover-container">
+                                <div class="discover">Discover</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-header-content">
+        <div class="tool-bar">
+            <app-toolbar></app-toolbar>
+        </div>
+        <div class="container-content" [ngClass]="{'arabic': !isEnglish}">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

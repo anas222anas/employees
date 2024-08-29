@@ -1,0 +1,48 @@
+<div style="position: relative;">
+<div class="container-dropdown" [ngClass]="{'checkedSelect-header': checkedSelect.checked}">
+    <input (change)="changeDetected()" #checkedSelect style="display:none;" id="dropdownInputProfile" type="checkbox" />
+    <div class="dropdown">
+        <label class="header" for="dropdownInputProfile">
+            <div class="img">
+                <img [src]="profile.img" alt="">
+            </div>
+            <div class="name-role">
+                <div class="name">{{profile.name}}</div>
+                <div class="role">{{profile.role}}</div>
+            </div>
+            <span *ngIf="!checkedSelect.checked" class="material-symbols-outlined arrow">
+                keyboard_arrow_down
+            </span>
+            <span *ngIf="checkedSelect.checked" class="material-symbols-outlined arrow">
+                keyboard_arrow_up
+            </span>
+        </label>
+
+    </div>
+
+</div>
+<div *ngIf="checkedSelect.checked" [ngClass]="{'checkedSelect': checkedSelect.checked}">
+    <div class="container-actions">
+        <div class="container-item-action" *ngFor="let action of actions">
+            <div class="container-to-hover">
+                <div class="item icon-uniqe">
+                    <span class="material-symbols-outlined arrow">
+                        {{action.icon}}
+                    </span>
+                </div>
+                <div class="item name">{{action.name}}</div>
+                <div *ngIf="isEnglish" class="item arrow-icon">
+                    <span class="material-symbols-outlined arrow">
+                        chevron_right
+                    </span>
+                </div>
+                <div *ngIf="!isEnglish" class="item arrow-icon">
+                    <span class="material-symbols-outlined arrow">
+                        chevron_left
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

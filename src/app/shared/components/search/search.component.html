@@ -1,0 +1,24 @@
+<div class="container-search">
+  <div *ngIf="label" class="label">{{label | translate}} </div>
+  <div class="container-input">
+    <input [type]="type" placeholder="{{placeHolder | translate}}" (keydown)="onEnter($event, input)" #input>
+
+    <div style="display: flex;">
+      <!-- <div *ngIf="actionsIcon.length" class="separator"></div> -->
+      <mat-icon *ngIf="actionsIcon.length >1" [ngClass]="{'rotate-90': isAr, 'rotate-0' : !isAr }" (click)="filterLeft()"
+        class="material-icons-outlined"
+        [ngStyle]="{'visibility': (!this._config.maxNumOfIcon || this.indexLeft == -1) ? 'hidden' : 'visible'}">arrow_left</mat-icon>
+      <div *ngFor="let action of actionsIcon">
+        <img @animation_fade_in *ngIf="checkIconPathImg(action)" src="{{action.path}}" alt="search"
+          (click)="handler(input, action)">
+        <mat-icon @animation_fade_in *ngIf="!checkIconPathImg(action)" (click)="handler(input, action)"
+          class="material-icons-outlined">{{action.path}}
+        </mat-icon>
+      </div>
+      <mat-icon *ngIf="actionsIcon.length > 1" [ngClass]="{'rotate-90': isAr, 'rotate-0' : !isAr }" (click)="filterRight()"
+        class="material-icons-outlined"
+        [ngStyle]="{'visibility': (!this._config.maxNumOfIcon || this.indexRight == this.allActions.length) ? 'hidden' : 'visible'}">arrow_right</mat-icon>
+    </div>
+
+  </div>
+</div>

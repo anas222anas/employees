@@ -1,0 +1,30 @@
+<div>
+  <input style="display:none;" id="dropdownInput" type="checkbox" />
+  <label for="dropdownInput" class="overlay"></label>
+
+  <div class="container-dropdown">
+    <div class="dropdown">
+      <label class="dropbtn" for="dropdownInput">
+        <span class="material-symbols-outlined">
+          language
+        </span>
+      </label>
+      <div class="dropdown-content-language">
+        <div class="items-list" *ngFor="let lang of  langulages; let idx = index;" (click)="changeLang(lang.name)"
+          for="dropdownInput">
+          <div class="line" *ngIf="idx != 0">
+            <div></div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <span class="material-symbols-outlined fex-direction">
+                language
+              </span>
+            </div>
+            <label for="dropdownInput">{{lang.name}}</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
