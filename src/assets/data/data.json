@@ -1,0 +1,248 @@
+{
+  "employees": [
+    {
+      "employeeCode": "#1234AA8",
+      "firstName": "Anas",
+      "lastName": "Zidan",
+      "middleName": "Hatem",
+      "departmentName": "Services",
+      "grade": "Expert",
+      "reportingManger": "Monthly",
+      "skills": [
+        "Angular",
+        "CSS"
+      ],
+      "basicSalary": 8000,
+      "houseRent": 1500,
+      "otherAllowance": 6000,
+      "totalSalaryPM": 2000,
+      "totalSalaryPA": 400,
+      "id": "8c92"
+    },
+    {
+      "id": "14dc",
+      "employeeCode": "A123TRt5",
+      "firstName": "Hatem",
+      "lastName": "Amer",
+      "middleName": null,
+      "departmentName": "Marketing",
+      "grade": "Proficient",
+      "reportingManger": "Weekly",
+      "skills": [
+        "React",
+        "Vue"
+      ],
+      "basicSalary": 10000,
+      "houseRent": 4000,
+      "otherAllowance": null,
+      "totalSalaryPM": 2000,
+      "totalSalaryPA": 3000
+    },
+    {
+      "id": "c993",
+      "employeeCode": "A1543YHy82",
+      "firstName": "Ehsan",
+      "lastName": "Shalhom",
+      "middleName": "Ahmad",
+      "departmentName": "Business",
+      "grade": "Basic",
+      "reportingManger": "Annual",
+      "skills": [
+        "CSS"
+      ],
+      "basicSalary": 1000,
+      "houseRent": 2000,
+      "otherAllowance": null,
+      "totalSalaryPM": 5000,
+      "totalSalaryPA": ""
+    },
+    {
+      "id": "7bb7",
+      "employeeCode": "#123AA54",
+      "firstName": "Hasan",
+      "lastName": "Zidan",
+      "middleName": null,
+      "departmentName": "Services",
+      "grade": "Expert",
+      "reportingManger": "Weekly",
+      "skills": [
+        "Vue"
+      ],
+      "basicSalary": 9000,
+      "houseRent": 1000,
+      "otherAllowance": null,
+      "totalSalaryPM": null,
+      "totalSalaryPA": 5000
+    },
+    {
+      "id": "073f",
+      "employeeCode": "#6467DD5",
+      "firstName": "Hasan",
+      "lastName": "Sofan",
+      "middleName": "",
+      "departmentName": "Legal",
+      "grade": "Proficient",
+      "reportingManger": "Weekly",
+      "skills": [
+        "Vue",
+        "Html"
+      ],
+      "basicSalary": 4000,
+      "houseRent": 500,
+      "otherAllowance": "",
+      "totalSalaryPM": 2000,
+      "totalSalaryPA": ""
+    },
+    {
+      "employeeCode": "#763GRF6",
+      "firstName": "Ahmad",
+      "lastName": "yaseen",
+      "middleName": "",
+      "departmentName": "Relations",
+      "grade": "Proficient",
+      "reportingManger": "Daily",
+      "skills": [
+        "React",
+        "Vue"
+      ],
+      "basicSalary": 2000,
+      "houseRent": 1000,
+      "otherAllowance": "",
+      "totalSalaryPM": "",
+      "totalSalaryPA": "",
+      "id": "9fb0"
+    },
+    {
+      "employeeCode": "#4633HG6",
+      "firstName": "Amen",
+      "lastName": "Zidan",
+      "middleName": "",
+      "departmentName": "Services",
+      "grade": "Proficient",
+      "reportingManger": "Weekly",
+      "skills": [
+        "Angular",
+        "Html"
+      ],
+      "basicSalary": 500,
+      "houseRent": 500,
+      "otherAllowance": "",
+      "totalSalaryPM": "",
+      "totalSalaryPA": 6555,
+      "id": "39cd"
+    }
+  ],
+  "departments": [
+    {
+      "value": "Sales",
+      "label": "Sales",
+      "id": "d12b"
+    },
+    {
+      "value": "Business",
+      "label": "Business",
+      "id": "8a2c"
+    },
+    {
+      "value": "Services",
+      "label": "Services",
+      "id": "089f"
+    },
+    {
+      "value": "Finance",
+      "label": "Finance",
+      "id": "e531"
+    },
+    {
+      "value": "Legal",
+      "label": "Legal",
+      "id": "b86f"
+    },
+    {
+      "value": "Marketing",
+      "label": "Marketing",
+      "id": "95de"
+    },
+    {
+      "value": "Relations",
+      "label": "Relations",
+      "id": "8621"
+    }
+  ],
+  "skills": [
+    {
+      "value": "Angular",
+      "label": "Angular",
+      "id": "4b69"
+    },
+    {
+      "value": "React",
+      "label": "React",
+      "id": "bc10"
+    },
+    {
+      "value": "Vue",
+      "label": "Vue",
+      "id": "3159"
+    },
+    {
+      "value": "Html",
+      "label": "Html",
+      "id": "9a61"
+    },
+    {
+      "value": "CSS",
+      "label": "CSS",
+      "id": "c124"
+    }
+  ],
+  "grades": [
+    {
+      "value": "Basic",
+      "label": "Basic",
+      "id": "fbcd"
+    },
+    {
+      "value": "Expert",
+      "label": "Expert",
+      "id": "b73d"
+    },
+    {
+      "value": "Proficient",
+      "label": "Proficient",
+      "id": "3b67"
+    },
+    {
+      "value": "Competent",
+      "label": "Competent",
+      "id": "f014"
+    }
+  ],
+  "reportingMangers": [
+    {
+      "value": "Hourly",
+      "label": "Hourly",
+      "id": "30a9"
+    },
+    {
+      "value": "Daily",
+      "label": "Daily",
+      "id": "35d2"
+    },
+    {
+      "value": "Weekly",
+      "label": "Weekly",
+      "id": "c4ae"
+    },
+    {
+      "value": "Monthly",
+      "label": "Monthly",
+      "id": "4702"
+    },
+    {
+      "value": "Annual",
+      "label": "Annual",
+      "id": "2c10"
+    }
+  ]
+}

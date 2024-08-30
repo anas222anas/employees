@@ -1,0 +1,17 @@
+table {
+    width: 100%;
+  }
+::ng-deep{
+    .mdc-data-table__header-cell, .mat-mdc-cell{
+        text-align: center !important;
+    }
+    .mat-mdc-row{
+        cursor: pointer !important;
+        &:hover{
+            background-color: #cdd3d9   !important;
+        }
+    }
+}
+table, mat-paginator{
+    background-color: #e0e2ec;
+}

@@ -8,7 +8,7 @@
             <span class="material-symbols-outlined">
                 notification_important
             </span>
-            <mat-icon [matBadge]="notifications.length" [matBadgeHidden]="hidden">
+            <mat-icon [matBadge]="notifications.length" [matBadgeHidden]="notifications.length !=0 ? hidden: true">
             </mat-icon>
         </label>
         <div class="dropdown-content">

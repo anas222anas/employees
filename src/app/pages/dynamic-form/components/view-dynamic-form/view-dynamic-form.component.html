@@ -1,0 +1,20 @@
+<header class="title">{{title() || ''}}</header>
+<form class="container" [formGroup]="viewFormGroup" (ngSubmit)="onSubmit()">
+    <div class="container-inputs">
+        @for (customInput of viewFormConfig(); track $index) {
+            <app-custom-input class="input" 
+            [config]="customInput" 
+            [formGroup]="viewFormGroup" 
+            [key]="customInput.key"></app-custom-input>
+        }
+    </div>
+    <div class="container-button">
+        @if(this.buttonsConfig()?.close){
+            <button mat-raised-button color="danger" class="close" type="button" (click)="close()">Close</button>
+        }
+        @else {
+            <button mat-raised-button color="primary" type="reset">{{buttonsConfig().reset?.text || 'Reset'}}</button>
+        }
+        <button mat-raised-button color="primary" class="butoon-submit" type="submit">{{buttonsConfig().submit.text || 'Submit'}}</button>
+    </div>
+</form>

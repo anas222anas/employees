@@ -26,7 +26,6 @@ export class NotificationsComponent implements OnInit, AfterContentChecked{
 
   }
   toggleBadgeVisibility() {
-    this.hidden = true;
   }
   currentLang: string = '';
 }

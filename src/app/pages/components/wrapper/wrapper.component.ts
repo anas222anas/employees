@@ -19,7 +19,7 @@ export class WrapperComponent implements OnInit{
   constructor(private router: Router, private route: ActivatedRoute, private language: TranslateService){
     this.sidnavItems = [
       {text: 'Home', isActive: true, urlImg: 'home.svg', routerLink: './employees'},
-      {text: 'Vedio Demo', isActive: false, urlImg: 'home.svg', routerLink: './employees'}
+      {text: 'Video Demo', isActive: false, urlImg: 'transaction.svg', routerLink: './demo'}
     ]
   }
   ngOnInit(): void {

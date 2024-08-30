@@ -5,15 +5,13 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { NotificationsComponent } from './components/notifications/notifications.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { MatBadgeModule } from '@angular/material/badge';
-import { SearchComponent } from './components/search/search.component';
 import { MatIconModule } from "@angular/material/icon";
 import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
   declarations: [
     LanguageComponent,
     NotificationsComponent,
-    ProfileComponent,
-    SearchComponent,
+    ProfileComponent
   ],
   imports: [
     CommonModule,
@@ -25,8 +23,7 @@ import { TranslateModule } from '@ngx-translate/core';
   exports: [
     LanguageComponent,
     NotificationsComponent,
-    ProfileComponent,
-    SearchComponent,
+    ProfileComponent
   ]
 })
 export class SharedModule { }
